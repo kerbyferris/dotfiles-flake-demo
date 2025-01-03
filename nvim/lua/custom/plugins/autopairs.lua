@@ -1,9 +1,7 @@
--- autopairs
--- https://github.com/windwp/nvim-autopairs
+-- File: lua/custom/plugins/autopairs.lua
 
 return {
   'windwp/nvim-autopairs',
-  event = 'InsertEnter',
   -- Optional dependency
   dependencies = { 'hrsh7th/nvim-cmp' },
   config = function()
