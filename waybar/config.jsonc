@@ -1,35 +1,34 @@
 // -*- mode: jsonc -*-
 {
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
+     "layer": "top", // Waybar at top layer
+     "position": "top", // Waybar position (top|bottom|left|right)
     //"height": 26, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
+        "tray",
         "hyprland/workspaces",
-        "custom/media"
     ],
     "modules-center": [
         "hyprland/window"
     ],
     "modules-right": [
-        "mpd",
-        "idle_inhibitor",
+        //"mpd",
+        //"idle_inhibitor",
         "pulseaudio",
         "network",
         "power-profiles-daemon",
         "cpu",
         "memory",
-        "temperature",
-        "backlight",
+        //"temperature",
+        //"backlight",
         //"keyboard-state",
-        "sway/language",
+        //"sway/language",
         "battery",
-        "battery#bat2",
-        "clock",
-        "tray",
-        "custom/power"
+        //"battery#bat2",
+        "clock"
+        //"custom/power"
     ],
      //Modules configuration
      "hyprland/workspaces": {
@@ -44,8 +43,8 @@
              //"4": "",
              //"5": "",
              "urgent": "",
-             "active": "",
-             "default": ""
+             "default": "",
+             "active": ""
          }
      },
     "keyboard-state": {
@@ -210,3 +209,4 @@
 		}
     }
 }
+
