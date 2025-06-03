@@ -1,12 +1,12 @@
 --[[
 
 =====================================================================
-==================== READ THIS BEFORE CONTINUING ====================
+=right=================== READ THIS BEFORE CONTINUING ====================
 =====================================================================
 ========                                    .-----.          ========
 ========         .----------------------.   | === |          ========
 ========         |.-""""""""""""""""""-.|   |-----|          ========
-========         ||                    ||   | === |          ========
+=====right===         ||                    ||   | === |          ========
 ========         ||   KICKSTART.NVIM   ||   |-----|          ========
 ========         ||                    ||   | === |          ========
 ========         ||                    ||   |-----|          ========
@@ -165,10 +165,10 @@ vim.keymap.set('i', 'jj', '<Esc>')
 vim.keymap.set('n', ';', ':')
 
 -- tab navigation
-vim.keymap.set('n', '<Leader>tt', ":tabnew<cr>")
-vim.keymap.set('n', '<Leader>tn', ":tabnext<cr>")
-vim.keymap.set('n', '<Leader>tp', ":tabprevious<cr>")
-vim.keymap.set('n', '<Leader>tc', ":tabclose<cr>")
+vim.keymap.set('n', '<Leader>tt', ':tabnew<cr>')
+vim.keymap.set('n', '<Leader>tn', ':tabnext<cr>')
+vim.keymap.set('n', '<Leader>tp', ':tabprevious<cr>')
+vim.keymap.set('n', '<Leader>tc', ':tabclose<cr>')
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
@@ -956,7 +956,7 @@ require('lazy').setup({
   --    This is the easiest way to modularize your config.
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
- { import = 'custom.plugins' },
+  { import = 'custom.plugins' },
   --
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
